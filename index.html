@@ -223,11 +223,11 @@ you to transform your home into a dream place.</p>
 	            <option value="deep">Deep Cleaning</option>
 	            <option value="premium">Premium Cleaning</option>
 	        </select><br>
-	    <label for="residentialArea">Square Feet of Your Area:</label><br>
+	    <label id="residentlabel" for="residentialArea">Square Feet of Your Area:</label><br>
 	    <input type="range" id="residentialArea" min="500" max="5000" value="1000" step="100">
 	    <output for="residentialArea" id="residentialAreaOutput">1000 sq ft</output>
 	    <br>
-	    <label for="bedrooms">Number of Bedrooms:</label>
+	    <label id="bedroomlabel" for="bedrooms">Number of Bedrooms:</label>
 	    <br>
 	    <input type="number" id="bedrooms" min="1" value="1"><br>
 	    <label for="bathrooms">Number of Bathrooms:</label>
@@ -240,13 +240,17 @@ you to transform your home into a dream place.</p>
 	    <div class="additional-services">
 	        <label>Additional Services</label>
 	        <div class="additionals_row">
-	        <input type="checkbox" id="service1" value="20"> Oven cleaning
-	        <input type="checkbox" id="service2" value="20"> Laundry
-	    	</div>
-	    	<div class="additionals_row">
-	        <input type="checkbox" id="service3" value="20"> Window cleaning
-	        <input type="checkbox" id="service4" value="20"> Fridge cleaning
-	    	</div>
+	        	<input type="checkbox" id="service1" value="20"> Oven cleaning
+	      	</div>
+	      	<div class="additionals_row">
+	        	<input type="checkbox" id="service2" value="20"> Laundry
+	    		</div>
+	    		<div class="additionals_row">
+	        	<input type="checkbox" id="service3" value="20"> Window cleaning
+	        </div>
+	        <div class="additionals_row">		
+	        	<input type="checkbox" id="service4" value="20"> Fridge cleaning
+	    		</div>
 	    </div>
 	    <p>Estimated Price</p>
 	    <div id="resultResidential" class="result_calc"></div>
@@ -258,25 +262,50 @@ you to transform your home into a dream place.</p>
 	<div id="commercialFields" style="display: none;">
 		<div class="calculatorFields_wrap">
 		<div class="commercialFields_col">
-		<label for="commercialCleaningOption">Select Cleaning Option:</label>
-	        <select id="commercialCleaningOption">
-	            <option value="basic">Basic Cleaning</option>
-	            <option value="deep">Deep Cleaning</option>
-	            <option value="premium">Premium Cleaning</option>
-	        </select>
-	    <label for="commercialArea">Square Feet of Your Area:</label>
-	    <input type="range" id="commercialArea" min="500" max="10000" value="2000" step="100">
-	    <output for="commercialArea" id="commercialAreaOutput">2000 sq ft</output>
+		<div class="commericalFields">
+			<div class="comm_leb_title">	
+				<label for="commercialCleaningOption">Select Cleaning Option:</label>
+			</div>
+			<div class="comm_optinons">	
+		        <select id="commercialCleaningOption">
+		            <option value="basic">Basic Cleaning</option>
+		            <option value="deep">Deep Cleaning</option>
+		            <option value="premium">Premium Cleaning</option>
+		        </select>
+		   </div>
+		   <div class="com_range_lab">      
+		    	<label id="" for="commercialArea">Square Feet of Your Area:</label>
+		    </div>	
+		    <input type="range" id="commercialArea" min="500" max="10000" value="2000" step="100">
+		    <output for="commercialArea" id="commercialAreaOutput">2000 sq ft</output>
 
-	    <div class="additional-services">
-	        <label>Additional Services (+$25 each):</label>
-	        <input type="checkbox" id="service5" value="25"> Cabinet cleaning
-	        <input type="checkbox" id="service6" value="25"> Baseboard cleaning
-	        <input type="checkbox" id="service7" value="25"> Dusting blinds
-	        <input type="checkbox" id="service8" value="25"> Screen cleaning
-	        <input type="checkbox" id="service9" value="25"> Window cleaning
+		    
+		</div>    
+	    <div class="additional-services additional_com">
+					<div class="add_com_title">    	
+	        	<label>Additional Services (+$25 each):</label>
+	      	</div>
+	      	<div class="add_com_row">
+	        	<input type="checkbox" id="service5" value="25"> Cabinet cleaning
+	        </div>	
+	        <div class="add_com_row">	
+	        	<input type="checkbox" id="service6" value="25"> Baseboard cleaning
+	      	</div>
+	      	<div class="add_com_row">
+	        	<input type="checkbox" id="service7" value="25"> Dusting blinds
+	        </div>
+	        <div class="add_com_row">	
+	        	<input type="checkbox" id="service8" value="25"> Screen cleaning
+	        </div>	
+	        <div class="add_com_row">	
+	        	<input type="checkbox" id="service9" value="25"> Window cleaning
+	      	</div>
+	      	<div class="result_com">
+		    	<div id="resultComertial" class="result_calc"></div>
+		    </div>
+	        
 	    </div>
-	    <div id="resultComertial" class="result_calc"></div>
+	    
 	    </div>
 		</div>
 	</div>

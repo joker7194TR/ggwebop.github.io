@@ -52,16 +52,37 @@ h4{
 	padding:20px 35px;
 	border-radius: 10px;
 	display:inline-block;
+	text-decoration:none;
 }
 .btn_inner:hover{
-	background-color: #294DA4;
+	background-color: #004BFF;
 }
+.btn_inner:focus{
+	background-color: #004BFF;
+}
+
 a:visited{
 	font-family:'Roboto-Medium';
 	color:inherit;
 	text-decoration: none;
 
 }
+button{
+	cursor:pointer;
+	font-size:24px;
+	font-weight:bold;
+	color:#fff;
+	background-color:#08339B;
+	border: 0;
+	padding:20px 0 !important;
+}
+button:hover{
+	background-color:#004BFF;
+}
+.btn_inner:focus{
+	background-color: #004BFF;
+}
+
 /*//////////////////////////////////
 	header
 //////////////////////////////////*/
@@ -294,6 +315,10 @@ header{
 	Calculator
 //////////////////////////////////*/
 
+.calculator_wrap {
+	margin-top:55px;
+	margin-bottom:55px;
+}
 .calculator_box{
 	color: #fff;
 	background-color:#08339B;
@@ -302,7 +327,8 @@ header{
 }
 .calculatorFields_wrap{
 	display:flex;
-	justify-content:space-between;
+	flex-wrap:wrap;
+	justify-content: space-between;
 }
 .result_calc{
   width: 250px;
@@ -310,19 +336,117 @@ header{
   background: white;
   color: black;
   border-radius: 10px;
-  padding: 30px 20px 0;
+  padding: 30px 20px 10px 20px;
+  font-size: 36px;
+  font-weight: bold;
 }
 #cleaningType{
-	margin: 0 0 30px;
+	margin: 0 0 30px 10px;
   background: white;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 22px;
   font-family: 'Roboto';
-  padding: 10px 20px 10px 20px;
+  padding: 5px 15px;
+  color:#000;
 }
 #cleaningType oprion{
 	font-family: 'Roboto';
+}
+#residentialCleaningOption{
+		margin: 20px 0 20px 0px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Roboto';
+  padding: 5px 15px;
+  color:#000;
+}
+#bedrooms{
+		margin: 20px 0 20px 0px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Roboto';
+  padding: 5px 15px;
+  color:#000;
+  max-width:200px;
+}
+#bathrooms{
+			margin: 20px 0 20px 0px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Roboto';
+  padding: 5px 15px;
+  color:#000;
+  max-width:200px;
+}
+#residentialArea{
+	/*margin-top:10px;
+	margin-bottom:20px;
+	display: inline-block;*/
+}
+#residentlabel{
+	margin-top:10px;
+	margin-bottom:20px;
+	display: inline-block;
+}
+#bedroomlabel{
+		margin-top:20px;
+	display: inline-block;
+}
+.additionals_row{
+	margin:20px 0;
+}
+.additional-services{
+	margin-bottom:15px;
+
+}
+.additionals_row input{
+	transform: scale(1.5);
+}
+.calculator_box button{
+	background-color: #e1f1fd;
+	color:#000;
+	margin: 40px 0 10px 0;
+
+}
+.calculator_box button:hover{
+	background-color: #4fb4ff;
+}
+.commercialFields_col{
+	display:flex;
+	flex: 1;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+#commercialCleaningOption{
+				margin: 15px 0 35px 0px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Roboto';
+  padding: 5px 15px;
+  color:#000;
+  max-width:200px;
+}
+.result_com{
+	margin-top:45px;
+}
+.add_com_row {
+	margin: 10px;
+}
+.add_com_row input{
+	transform: scale(1.5);
+}
+.com_range_lab{
+	margin-bottom:20px;
+
 }
 /*//////////////////////////////////
 	Services
